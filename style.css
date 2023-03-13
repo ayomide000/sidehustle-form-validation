@@ -7,13 +7,26 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
   font-size: 14px;
+  /* max-width: 450px; */
+  /* max-height: 30vh; */
+  margin: 0 auto;
+  width: 100vw;
+  /* height: 100vh;  */
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #form {
-  max-width: 400px;
-  height: 100vh;
+  max-width: 450px;
+  /* max-height: 40vh; */
   padding: 1.25rem;
-  margin: 0.2rem auto;
+  margin: 2.5rem auto;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -22,12 +35,12 @@ body {
 
 #form h1 {
   text-align: center;
-  margin: -0.5rem 0 0.5rem;
+  margin: 1rem 0;
   color: #333;
 }
 
 .form-control {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-control input {
@@ -58,7 +71,7 @@ body {
 
 .form-control label {
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
   /* color: #333; */
 }
 
@@ -69,7 +82,7 @@ body {
 
 button.btn-form {
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   padding: 0.625rem 1.25rem;
   background: #333;
   border: none;
@@ -130,9 +143,9 @@ button.btn-form:hover {
   /* transform: translate(-50%, -50%) scale(1); */
   background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
   position: absolute;
-  top: 0%;
+  /* top: 0%; */
   width: 100vw;
-  height: 100vh;
+  /* height: 20vh; */
 }
 
 .popup-cont {
@@ -142,8 +155,9 @@ button.btn-form:hover {
   justify-content: center;
   background: #fff;
   border-radius: 2rem;
-  width: 70vw;
-  height: 60vh;
+  width: 50vw;
+  height: 30vh;
+  /* height: 200px; */
   margin: 2rem auto;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
@@ -176,19 +190,23 @@ button.btn-popup:hover {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 400px) {
+@media (min-width: 450px) {
+  #form {
+    width: 100vw;
+    /* height: 100vh; */
+    /* margin: 2rem auto; */
+    /* color: red; */
+    /* border: 10px solid red; */
+  }
   #form h1 {
-    font-size: 5px;
-    margin-top: -2rem;
-    margin-bottom: 1rem;
+    margin-top: -1rem;
+    /* margin-bottom: 1rem; */
   }
   .form-control {
-    margin-bottom: -1rem;
+    margin-bottom: 0.5rem;
   }
-  .form-control input {
-    height: 0.5rem;
-  }
-  button.btn-form {
-    width: 1rem;
+  .popup-cont {
+    height: 600px;
+    /* height: 50vh; */
   }
 }
