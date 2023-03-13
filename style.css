@@ -204,7 +204,7 @@ button.btn-popup:hover {
     /* margin: 2rem auto; */
     /* color: red; */
     /* border: 10px solid red; */
-    width: 95%;
+    width: 100%;
     height: 100%;
     margin: 2.5rem auto;
     /* background: black; */
@@ -224,6 +224,6 @@ button.btn-popup:hover {
     /* height: 600px; */
     /* height: 50vh; */
     /* background-color: olivedrab; */
-    width: 90%;
+    width: 98%;
   }
 }
